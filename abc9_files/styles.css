@@ -1,0 +1,4265 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700");
+@import url("../fonts/regular.css");
+@import url("../fonts/bold.css");
+@import url("../fonts/medium.css");
+@import url("../fonts/light.css");
+@import url("../fonts/encore-regular.css");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  overflow-x: hidden;
+  line-height: 22px;
+}
+
+body,
+html {
+  height: 100%;
+  font-family: "pf_handbook_proregular";
+  -webkit-font-smoothing: antialiased;
+  line-height: 20px;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.h2,
+h2 {
+  font-size: 32px;
+}
+
+.h4,
+h4 {
+  font-size: 26px;
+}
+
+section,
+footer {
+  float: left;
+  width: 100%;
+  overflow: hidden;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+:focus {
+  outline: 0px;
+  box-shadow: none;
+}
+/*Navigation section*/
+
+.top-belt {
+  float: left;
+  width: 100%;
+  text-align: right;
+  background-color: #969f70;
+}
+
+.top-belt ul {
+  margin-bottom: 0;
+}
+
+.top-belt ul li {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.first-nav {
+  float: left;
+  width: 100%;
+  background-color: #969f70;
+}
+
+.first-nav .navbar-brand {
+  padding: 25px 0;
+  margin-left: 20px;
+  margin-right: 80px;
+}
+
+.first-nav .navbar-brand img {
+  max-width: 190px;
+}
+
+.first-nav .navbar-light .navbar-nav .nav-link {
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.8888888888888888;
+  letter-spacing: normal;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.navbar-nav img {
+  width: 16px;
+  height: 16px;
+}
+.first-nav .navbar {
+  background-color: #c31c2f;
+  padding: 0;
+  margin: 0px;
+}
+
+.second-nav {
+  background-color: #969f6e;
+  float: left;
+  width: 100%;
+  height: 46px;
+}
+
+.bottom-belt {
+  float: left;
+  width: 100%;
+  background-color: #3e593c;
+}
+
+.bottom-belt p {
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.2px;
+  color: #ffffff;
+  margin-bottom: 3px;
+  margin-top: 3px;
+  padding-left: 120px;
+}
+
+.mob-top-30 {
+  margin-top: 0px;
+}
+
+.second-nav .navbar {
+  padding: 7px 0;
+}
+
+.second-nav .navbar-light .navbar-nav .nav-link {
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: right;
+  color: #ffffff;
+  padding: 0 15px;
+}
+
+.second-nav .navbar-brand {
+  font-size: 26px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 26px;
+  letter-spacing: 0.300000011920929px;
+  color: #ffffff;
+  padding-top: 0;
+  margin-left: 75px;
+  margin-right: 30px;
+  text-transform: uppercase;
+}
+
+.top-belt ul li a {
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.14;
+  letter-spacing: normal;
+  color: #000000;
+  border-right: 2px solid #000000;
+  padding-right: 10px;
+  font-family: "pf_handbook_promedium";
+}
+
+.top-belt ul li:last-child a {
+  border-right: 0;
+}
+
+/* .dropdown-toggle::after { */
+  /* content: "^"; */
+  /* border: 0; */
+  /* position: absolute; */
+  /* top: 25px; */
+  /* transform: rotate(180deg); */
+  /* right: 0; */
+  /* font-size: 22px; */
+  /* color: #e9e9e9; */
+  /* font-family: pf_handbook_prolight; */
+/* } */
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  right: 0;
+  background-color: #c7222a;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  z-index: 99999;
+}
+
+.sidenav a {
+  padding: 20px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+}
+
+.mobarrow img {
+  width: 13px;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+.login-mob {
+  display: none;
+}
+
+/*Navigation section ends*/
+
+/*Common Styles */
+
+.sub-head {
+  position: relative;
+  font-size: 32px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.31;
+  letter-spacing: 0.3px;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 36px;
+  font-family: "pf_handbook_promedium";
+}
+
+.sub-head:after {
+  position: absolute;
+  content: "";
+  width: 107px;
+  height: 3px;
+  background-color: #3e593c;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: -8px;
+}
+
+.sub-desc {
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.28;
+  letter-spacing: normal;
+  text-align: center;
+  color: #6c7174;
+  margin-bottom: 30px;
+}
+
+.primary-button {
+  width: 157px;
+  height: 47px;
+  border-radius: 3px;
+  background-color: #3e593c;
+  font-size: 19px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 47px;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.primary-button:active,
+.primary-button:hover {
+  background-color: #1d311c;
+  color: #fff;
+}
+
+/*Common Styles end*/
+
+/*banner section*/
+
+section.debt-funds {
+  padding: 25px 0 90px 0;
+}
+
+section.debt-funds .head-block {
+  float: left;
+  width: 100%;
+}
+
+section.debt-funds .head-block h3 {
+  font-family: "pf_handbook_promedium";
+  font-size: 28px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.8;
+  letter-spacing: normal;
+  color: #000000;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+section.debt-funds .head-block a {
+  float: right;
+  margin-top: 15px;
+  font-size: 24px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: center;
+  color: #3e593c;
+}
+
+section.debt-funds .head-block a img {
+  margin-top: -3px;
+  margin-left: 15px;
+}
+
+section.debt-funds .head-block p {
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  color: #6c7174;
+  margin-bottom: 10px;
+}
+
+section.blogs {
+  padding: 40px 0 45px 0;
+  background-color: #f7f7f7;
+}
+
+section.blogs .blog-box {
+  float: left;
+  width: 100%;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px 0 rgba(218, 218, 218, 0.5);
+  margin-bottom: 10px;
+  background-color: #ffffff;
+}
+
+section.blogs .blog-box img {
+  width: 100%;
+}
+
+section.blogs .blog-box .bl-content {
+  float: left;
+  width: 100%;
+  padding: 20px;
+  background: #fff;
+}
+
+section.blogs .blog-box .bl-content h4 {
+  font-size: 22px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.9090909090909091;
+  letter-spacing: normal;
+  color: #000000;
+  margin-bottom: 15px;
+  font-family: "pf_handbook_promedium";
+}
+
+section.blogs .blog-box .bl-content p {
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.0555555555555556;
+  letter-spacing: normal;
+  color: #6c7174;
+  margin-bottom: 0px;
+}
+
+/*section blogs  ends*/
+
+/*scheme-details starts*/
+
+section.scheme-details {
+  padding: 80px 0 60px 0;
+}
+
+.scheme-detail-card {
+  padding: 24px 34px;
+  border-radius: 2px;
+  float: left;
+  background-color: #ffffff;
+  border: 1px solid #cdcece;
+  padding-right: 0;
+  margin-bottom: 30px;
+}
+
+.scheme-detail-card .col-md-3,
+.scheme-detail-card .col-md-6,
+.scheme-detail-card .col-md-12 {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.scheme-detail-card .row {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+section.scheme-details .scheme-detail-left {
+  float: left;
+  width: 100%;
+  padding-right: 10px;
+  height: 176px;
+}
+
+section.scheme-details .scheme-detail-center {
+  float: left;
+  width: 100%;
+  height: 176px;
+  padding-left: 35px;
+  padding-right: 45px;
+  border-right: 1px solid #cdcece;
+  border-left: 1px solid #cdcece;
+}
+
+section.scheme-details .scheme-detail-right {
+  float: left;
+  width: 100%;
+  height: 176px;
+  text-align: center;
+}
+
+section.scheme-details .scheme-detail-left .scheme-detail,
+section.scheme-details .scheme-detail-center .scheme-suitable,
+section.scheme-details .scheme-detail-right .scheme-meter {
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  color: #6c7174;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+  display: inline-block;
+}
+
+section.scheme-details .scheme-detail-left h5 {
+  max-width: 180px;
+  max-height: 40px;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.1111111111111112;
+  letter-spacing: normal;
+  color: #000000;
+  display: block;
+  margin-bottom: 10px;
+}
+
+section.scheme-details .scheme-detail-left p {
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.125;
+  letter-spacing: normal;
+  color: #000000;
+  display: block;
+  font-family: "pf_handbook_prolight";
+}
+
+section.scheme-details .scheme-detail-center p {
+  font-size: 18px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.0555555555555556;
+  letter-spacing: normal;
+  font-family: "pf_handbook_prolight";
+  color: #000000;
+  display: block;
+  margin-bottom: 0;
+  max-width: 357px;
+}
+
+section.scheme-details .scheme-detail-right img {
+  display: block;
+  max-height: 143px;
+  margin: 0 auto;
+}
+
+section.scheme-details .discl-scheme {
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.1875;
+  letter-spacing: normal;
+  font-family: "pf_handbook_prolight";
+  color: #6c7174;
+  display: block;
+  margin: 0;
+  margin-top: 16px;
+}
+
+/*scheme-details ends*/
+
+section.disclaimer {
+  background-color: #f7f7f7;
+  padding: 30px 0;
+}
+
+section.disclaimer p {
+  font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.4285714285714286;
+  letter-spacing: normal;
+  color: #6c7174;
+  font-family: "pf_handbook_prolight";
+}
+
+section.disclaimer p.disclaimer-text-1 {
+  margin-bottom: 0px;
+}
+
+section.disclaimer p.disclaimer-text-2 {
+  max-width: 530px;
+  margin-bottom: 15px;
+}
+
+section.disclaimer p.carefull {
+  font-size: 16px;
+  color: #000000;
+  font-family: "pf_handbook_prolight";
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+}
+
+/*footer*/
+
+footer .foot-wrap-1 {
+  background: #201e19;
+  float: left;
+  width: 100%;
+}
+
+footer .footerCols h3 {
+  font-size: 18px;
+  color: #999;
+  font-weight: 700;
+  margin: 20px 0 10px;
+}
+
+.footerMenus {
+  display: table;
+}
+
+footer .footerCols ul {
+  width: 100%;
+  float: right;
+  list-style-type: none;
+}
+
+footer .footerCols ul li {
+  display: table-cell;
+  vertical-align: top;
+}
+
+footer .footerCols ul.links {
+  float: none;
+  width: auto;
+}
+
+footer .footerCols ul.links {
+  display: block;
+}
+
+footer .footerCols ul.links li {
+  display: block;
+  width: 100%;
+  float: none;
+}
+
+footer .footerCols ul.links li a {
+  font-size: 16px;
+  color: #828282;
+  line-height: 1.8rem;
+}
+
+footer .col-wrapper {
+  display: inline-block;
+  border-left: 1px solid #333;
+  padding: 0 0 0 4.79%;
+}
+
+footer .col-subscribe {
+  padding-left: 15px;
+}
+
+footer .footerCols h3 {
+  font-size: 18px;
+  color: #999;
+  font-weight: 700;
+  margin: 20px 0 10px;
+}
+
+footer .col-subscribe ul.socialLinks {
+  float: none;
+  width: auto;
+  margin-bottom: 0;
+}
+
+footer .col-subscribe ul.socialLinks li {
+  height: 37px;
+  width: 37px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #000;
+  -webkit-box-shadow: 2px 2px 3px 0 rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 2px 2px 3px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 3px 0 rgba(0, 0, 0, 0.3);
+  margin-right: 5px;
+  margin-left: 0;
+  position: relative;
+  padding: 0;
+  border-bottom: 0;
+}
+
+footer .col-subscribe ul.socialLinks li a {
+  border-radius: 50%;
+  display: table;
+  margin: 0 auto;
+  height: 37px;
+  width: 37px;
+  text-align: center;
+  padding-top: 6px;
+}
+
+footer .col-subscribe ul.socialLinks li img {
+  margin: 0 auto;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+footer .col-mobApp {
+  display: inline-block;
+  border-top: 1px solid #333;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+footer .footerCols h3 {
+  font-size: 18px;
+  color: #999;
+  font-weight: 700;
+  margin: 20px 0 10px;
+}
+
+footer .col-mobApp .dvAppIcons {
+  padding: 18px;
+  background: #2b2923;
+  width: 158px;
+  font-size: 0;
+}
+
+footer .col-mobApp .dvAppIcons a {
+  display: inline-block;
+  background: url("../images/sprite.png") no-repeat -5px -186px;
+  height: 35px;
+  width: 120px;
+}
+
+footer .col-mobApp .dvAppIcons a.ag {
+  margin-top: 10px;
+  background-position: -6px -225px;
+}
+
+footer .col-mobApp .dvAppIcons a {
+  display: inline-block;
+  background: url("../images/sprite.png") no-repeat -5px -186px;
+  height: 35px;
+  width: 120px;
+}
+
+footer .dvPrivacyBar {
+  border-top: 1px solid #333;
+  background: #201e19;
+  float: left;
+  width: 100%;
+  padding: 20px 3%;
+}
+
+footer .dvPrivacyBar .dvCopyright {
+  font-size: 18px;
+  color: #666;
+  line-height: 18px;
+  float: left;
+}
+
+.foot-wrap-2 {
+  background-color: #201e19;
+  float: left;
+  width: 100%;
+  padding: 40px 0;
+  margin-top: 0;
+  padding-bottom: 20px;
+}
+
+.foot-wrap-2 ul {
+  margin-bottom: 0;
+}
+
+.foot-wrap-2 ul li a {
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.8;
+  letter-spacing: normal;
+  color: #ffffff;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.foot-wrap-2 .copyright {
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #ffffff;
+  float: left;
+  width: 100%;
+  border-top: 1px solid #cdcece;
+  padding: 10px 0;
+}
+
+.ready-to-invset a {
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 42px;
+  letter-spacing: normal;
+  color: #ffffff;
+  width: 237px;
+  height: 42px;
+  border-radius: 5px;
+  box-shadow: 0 0 6px 1px rgba(186, 186, 186, 0.5);
+  background-color: #95282b;
+  display: inline-block;
+  padding-left: 15px;
+  position: fixed;
+  right: -255px;
+  bottom: 100px;
+  z-index: 9999;
+  transition: 0.5s ease all;
+}
+
+.ready-to-invset.come-in a {
+  right: -5px;
+}
+
+.ready-to-invset a img {
+  max-width: 20px;
+  margin-left: 5px;
+}
+
+.call-button a {
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 42px;
+  letter-spacing: normal;
+  color: #ffffff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px 0 rgba(186, 186, 186, 0.5);
+  background-color: #95282b;
+  display: inline-block;
+  position: fixed;
+  right: -60px;
+  bottom: 45px;
+  text-align: center;
+  z-index: 9999;
+  transition: 0.5s ease all;
+}
+
+.call-button.call-come-in a {
+  right: 10px;
+}
+
+.call-button a img {
+  width: 60%;
+  margin-top: -5px;
+}
+
+.social li a img {
+  max-height: 20px;
+}
+
+.foot-wrap-2 ul.social {
+  float: right;
+  margin-bottom: 0;
+}
+
+.hideon-desk {
+  display: none;
+}
+
+.partoftheadity {
+  color: #ffffff;
+  font-size: 10px;
+  line-height: 24px;
+  font-family: "pf_encore_sans_proregular";
+  padding-left: 18px;
+}
+
+/*ABC Landing section Start Here*/
+
+.top-rghtlinks {
+  position: relative;
+  margin-left: 170px;
+  width: 100%;
+}
+.second-nav h3 {
+  color: white;
+  float: left;
+}
+.top-rghtlinks ul li {
+  float: left;
+  color: #fff;
+  list-style-type: none;
+  padding-left: 4px;
+  position: relative;
+  cursor: pointer;
+}
+
+.top-rghtlinks .caret {
+  margin-left: 20px;
+  float: left;
+}
+
+.dropdown-menu.show {
+  display: block;
+  margin-left: 0;
+  margin-top: 0px;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: auto;
+}
+
+.inner-banner {
+  height: 426px;
+}
+
+.carousel-indicators li {
+  width: 11px;
+  height: 11px;
+  border-radius: 10px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  margin-right: 10px;
+}
+
+.top-rghtlinks ul li.show a {
+  background: #fff;
+  color: #000;
+  padding: 10px 10px;
+  padding-bottom: 10px;
+  margin-top: -6px;
+}
+
+.carousel {
+  position: relative;
+  height: 100%;
+  max-width: 88%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.carousel-item {
+  height: 100%;
+  margin-left: 0px;
+}
+
+.carousel-inner {
+  height: 100%;
+}
+
+.inner-banner .carousel-control-next,
+.carousel-control-prev {
+  width: auto;
+  padding-left: 1%;
+  opacity: 1;
+  padding-right: 1%;
+}
+
+.carouselcaption {
+  position: absolute;
+  top: 95px;
+  margin-left: 40px;
+  border: 3px solid #ffffff;
+  padding: 35px 49px;
+}
+
+.inner-banner .carouselcaption h3 {
+  color: #ffffff;
+  font-family: "pf_handbook_promedium";
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 41px;
+}
+
+.top-rghtlinks .show .dropdown-toggle::after {
+  content: "^";
+  border: 0;
+  position: absolute;
+  top: 2 px;
+  transform: rotate(360deg);
+  right: 21px;
+  font-size: 22px;
+  color: #c7222a;
+  font-family: "pf_handbook_promedium";
+}
+
+.top-rghtlinks ul li ul li a {
+  background: transparent !important;
+}
+
+.carouselcaption button {
+  background-color: #c7222a;
+  height: 44px;
+  width: auto;
+  color: #ffffff;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 0;
+  font-family: pf_handbook_probold;
+  font-weight: normal;
+  padding: 0 25px;
+  margin-top: 25px;
+}
+
+.carouselcaption button a {
+  color: #fff;
+  cursor: pointer;
+}
+
+.subhdr-normal {
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 2px;
+  line-height: 27px;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.inner-normaltext {
+  font-size: 16px;
+  color: #6c7174;
+  line-height: 20px;
+  text-align: center;
+}
+
+.inner_csip .inner-normaltext {
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #6c7174;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "pf_encore_sans_proregular";
+}
+
+.invest-solutions {
+  border: 1px solid #dedede;
+  min-height: 345px;
+  width: auto;
+  font-size: 24px;
+  padding-left: 20px;
+  padding-right: 30px;
+  margin-top: 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 10px 0 rgba(184, 184, 184, 0.5);
+  border-top: 4px solid #6a7c55;
+  padding-top: 20px;
+}
+
+/*
+.investment .row .invest-img1{
+    background: url('../images/saving-icon.png') no-repeat;
+    background-position: center 40px;
+    background-size: 45%;
+}
+.investment .row div:nth-child(2){
+    background: url('../images/wealth-icon.png') no-repeat;
+    background-position: center 40px;
+    background-size: 45%;
+}
+.investment .row div:nth-child(3){
+    background: url('../images/regular-income-icon.png') no-repeat;
+    background-position: center 40px;
+    background-size: 45%;
+}
+*/
+
+.investment .row div:nth-child(4) {
+  background: url("../images/tax-saving-icon.png") no-repeat;
+  background-position: center 40px;
+  background-size: 45%;
+}
+
+.fund-nav {
+  width: 100%;
+  height: 365px;
+  background-color: rgba(205, 206, 206, 0.15);
+}
+
+.investment {
+  margin: 0 auto;
+  margin-top: 15px;
+}
+
+.fund-nav .inner-normaltext {
+  color: #6c7174;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  font-family: "pf_handbook_proregular";
+}
+
+section.fund-nav {
+  padding: 30px 0px 30px 0;
+}
+
+#demo1 {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.panel-thumbnail {
+  background: #fff;
+  width: 352px;
+  height: 222px;
+  border: 1px solid #dedede;
+  max-width: inherit;
+  border-radius: 4px;
+  padding: 20px 30px;
+  cursor: pointer;
+}
+
+.box_in {
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.outer_div {
+  margin-top: 15px;
+}
+
+.panel-thumbnail h3 {
+  font-size: 24px;
+  color: #000;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(250, 210, 137, 0.48);
+  padding-right: 0;
+}
+
+.thumb_txt {
+  color: #969f6e;
+  font-family: "pf_encore_sans_proregular";
+  font-size: 13px;
+  line-height: 20px;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+}
+
+.price-range {
+  color: #6c7174;
+  font-family: "pf_handbook_proregular";
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.price-ratio {
+  color: #6c7174;
+  font-size: 14px;
+  float: right;
+  background: url(../images/ratio-green-icon.png) no-repeat;
+  background-size: 15px;
+  background-position: 0 center;
+  padding-left: 25px;
+  margin-top: 15px;
+}
+
+.price-graph {
+  padding-left: 5px;
+}
+
+.fund-nav .primary-button {
+  margin: 0 auto;
+  margin-top: 30px;
+  font-size: 20px;
+  width: 120px;
+  height: 44px;
+  line-height: 44px;
+  font-family: "pf_handbook_probold";
+  font-weight: normal;
+}
+
+.top-bar {
+  border-bottom: 0;
+  margin: 0 !important;
+}
+
+.tab_box .sub .row {
+  margin: 0 !important;
+}
+
+.tab-pane h5 {
+  font-family: "pf_handbook_promedium";
+}
+
+.align-left {
+  text-align: left;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.indice-market {
+  width: 100%;
+  margin-top: 40px;
+  padding-bottom: 40px;
+}
+
+.indice-box {
+  border: 1px solid #dedede;
+  height: 420px;
+  width: 100%;
+  margin-top: 20px;
+  text-align: center;
+  padding-top: 10px;
+  border-radius: 4px;
+}
+
+.market-box {
+  border: 1px solid #dedede;
+  height: 420px;
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 4px;
+}
+
+.indice-market .market-box .nav-item .nav-link {
+  color: #6a7c55;
+  font-size: 18px;
+  border-radius: 0;
+  border: 0;
+  padding: 5px 15px;
+  border: 1px solid #d9dccb;
+  font-weight: normal;
+  font-family: "pf_handbook_probold";
+  height: 31px;
+  line-height: 28px;
+  padding: 0;
+  width: 120px;
+  text-align: center;
+}
+
+.indice-market .market-box .nav-item .active {
+  background-color: #6a7c55;
+  color: #fff;
+  border: 0;
+}
+
+.indice-market .market-box .nav-tabs {
+  border-bottom: 0;
+  width: 360px;
+  margin: 0 auto;
+  margin-top: 25px;
+}
+
+.indice-market .tab-content ul li {
+  list-style-type: none;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #f3f1f1;
+  padding-top: 12px;
+  color: #6c7174;
+  font-size: 18px;
+}
+
+.tab_box {
+  float: none;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.hideon-mobile .nav-link img {
+  margin-top: -7px;
+}
+
+.expence-ratio {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.expence-ratio_box {
+  width: 100%;
+  background-color: #c7222a;
+  border-radius: 4px;
+  height: auto;
+  color: #ffffff;
+  font-size: 24px;
+  float: left;
+}
+
+.normaltxt {
+  padding-top: 20px;
+  padding-left: 36px;
+  padding-bottom: 21px;
+  float: left;
+}
+
+.expence-ratio_box .normaltxt {
+  padding-top: 20px;
+  padding-left: 50px;
+  padding-bottom: 21px;
+  float: left;
+  font-size: 24px;
+  line-height: 27px;
+}
+
+.shpe_img {
+  margin-left: 20px;
+  margin-top: -3px;
+  float: right;
+}
+
+.blog {
+  width: 100%;
+  margin-top: 50px;
+  height: auto;
+  overflow: visible;
+}
+
+.blog_bg {
+  width: 100%;
+  height: auto;
+  background-size: cover;
+}
+
+.blog_bg img {
+  width: 100%;
+  height: auto;
+}
+
+.blog_bg2 img {
+  width: 100%;
+  height: auto;
+}
+
+.blog_bg2 {
+  width: 100%;
+  height: auto;
+  background-size: cover;
+}
+
+.blog_bgbox {
+  width: 400px;
+  position: relative;
+}
+
+.blog-box {
+  background: #fff;
+  width: 85%;
+  height: 193px;
+  margin-top: -85px;
+  margin-left: auto;
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
+  margin-right: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.blog .subhdr-normal {
+  margin-bottom: 22px;
+}
+
+.rowbox {
+  float: right;
+  padding-right: 40px;
+}
+
+.blog-box p {
+  padding-top: 20px;
+  color: #6c7174;
+  padding-left: 20px;
+  font-size: 14px;
+  padding-bottom: 0;
+  margin-bottom: 5px;
+  font-family: "pf_encore_sans_proregular";
+}
+
+.blog-box h5 {
+  font-size: 24px;
+  padding-left: 20px;
+  padding-bottom: 0;
+  margin-bottom: 3px;
+  font-family: "pf_handbook_promedium";
+}
+
+.blog-box p.subnormaltxt2 {
+  padding-top: 0px;
+  color: #000;
+  padding-left: 20px;
+  font-size: 18px;
+  padding-bottom: 0;
+  margin-bottom: 5px;
+  line-height: 20px;
+  padding-right: 55px;
+  font-family: pf_handbook_prolight;
+  font-weight: normal;
+}
+
+.blog .row .primary-button {
+  margin: 0 auto;
+  border: 1px solid #969f6e;
+  background: transparent;
+  color: #3e593c;
+  border-radius: 0;
+  padding: 11px 17px;
+  width: auto;
+  height: auto;
+  line-height: inherit;
+  font-size: 20px;
+  padding-bottom: 10px;
+  border-radius: 2px;
+  margin-top: 150px;
+  line-height: inherit;
+  width: 177px;
+  height: 44px;
+  line-height: 44px;
+  padding: 0;
+  font-family: "pf_handbook_probold";
+  font-weight: normal;
+}
+
+section.investers {
+  padding: 42px 0px 45px 0;
+  margin-top: 50px;
+}
+
+.investers {
+  background-color: #f1f3f6;
+  width: 100%;
+  height: auto;
+}
+
+.invester-bg {
+  background-color: #fffdfd;
+  width: 100%;
+  height: 370px;
+  box-shadow: 0 3px 10px 0 rgba(205, 206, 206, 0.5);
+  border-radius: 2px;
+  position: relative;
+}
+
+.invester-box {
+  margin-top: 30px;
+}
+
+.invester-img {
+  margin-top: -20px;
+  position: absolute;
+  margin-left: -20px;
+  width: 95%;
+}
+
+.invester-img img {
+  width: 100%;
+  height: auto;
+}
+
+.investers .row .primary-button {
+  margin: 0 auto;
+  border: 1px solid #969f6e;
+  background: #fff;
+  color: #3e593c;
+  border-radius: 0;
+  padding: 11px 17px;
+  width: auto;
+  height: auto;
+  line-height: inherit;
+  font-size: 20px;
+  padding-bottom: 10px;
+  border-radius: 2px;
+  margin-top: 40px;
+  width: 177px;
+  height: 44px;
+  line-height: 44px;
+  padding: 0;
+  font-family: "pf_handbook_probold";
+  font-weight: normal;
+}
+
+.invester_solutions {
+  background-color: #fff;
+  width: 100%;
+  height: auto;
+}
+
+.invest-boxnew {
+  height: 157px;
+}
+
+.invester_solutions h3 {
+  margin-top: 40px;
+  color: #000;
+  font-size: 24px;
+  text-transform: uppercase;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.invester-greenbg h3 {
+  margin-top: 40px;
+  color: #fff;
+  font-size: 24px;
+  text-transform: uppercase;
+  line-height: 27px;
+  max-width: 500px;
+  letter-spacing: 2.75px;
+}
+
+.invester_solutions-bg {
+  background: #fff;
+  width: 100%;
+  height: auto;
+  position: relative;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  border-bottom: 5px solid #f7a500;
+  min-height: 215px;
+}
+
+.invester_solutions-bg h5 {
+  padding-top: 25px;
+  padding-left: 30px;
+  padding-right: 70px;
+  font-size: 20px;
+  color: #000;
+}
+
+.invester_solutions-bg p {
+  padding-left: 30px;
+  color: #6c7174;
+  line-height: 20px;
+  font-size: 16px;
+  padding-right: 40px;
+  font-family: "pf_encore_sans_proregular";
+}
+
+.invester_solutions-bg .moretxt {
+  padding-top: 0;
+  padding-left: 30px;
+  padding-right: 70px;
+  color: #3e593c;
+  padding-bottom: 20px;
+  font-size: 20px;
+  font-family: "pf_handbook_probold";
+  font-weight: normal;
+}
+
+.invester-greenbg {
+  background-color: #3e593c;
+  padding-top: 10px;
+  padding-left: 96px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-bottom: 10px;
+}
+
+.sub .col-md-8 {
+  color: #000;
+  font-family: "pf_handbook_prolight";
+  font-weight: 300;
+  line-height: 20px;
+}
+
+.invester-list {
+  margin-top: 30px;
+  clear: both;
+}
+
+.invester-list li {
+  color: #fff;
+  font-size: 20px;
+  list-style-type: none;
+  width: 44%;
+  float: left;
+  margin-right: 2%;
+  margin-bottom: 40px;
+}
+
+.invester-list span {
+  font-size: 64px;
+}
+
+.invest-num {
+  float: left;
+  font-size: 64px;
+}
+
+.invest-txt {
+  float: left;
+  width: 75%;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.pay-card {
+  float: left;
+}
+
+.pay-card ul li {
+  float: left;
+  list-style-type: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-left: 1px solid #ececec;
+  height: 60px;
+  line-height: 60px;
+}
+
+.paycards-section {
+  border-top: 1px solid #000;
+}
+
+.invest-con-txt {
+  float: left;
+  padding-top: 240px;
+  padding-left: 10px;
+  font-weight: normal;
+  font-size: 18px;
+  letter-spacing: 0.75px;
+  height: 290px;
+  font-family: "pf_handbook_probold";
+  line-height: 22px;
+}
+
+.invest-con-normaltxt {
+  float: left;
+  padding-top: 0;
+  padding-left: 10px;
+  font-size: 16px;
+}
+
+.invest-brdr {
+  border: 1px solid #f7a500;
+  height: 365px;
+  position: absolute;
+  width: 100%;
+  margin-top: -10px;
+  margin-left: -10px;
+}
+
+.brdr-red {
+  border: 1px solid #c7222a;
+}
+
+.brdr-green {
+  border: 1px solid #6a7c55;
+}
+
+.brdr-yellow {
+  border: 1px solid #f7a500;
+}
+
+.blog-moretxt {
+  color: #c7222a;
+}
+
+.slider {
+  width: 100%;
+  margin: 0 auto;
+  overflow: visible;
+}
+
+.slick-slide {
+  margin: 0px 20px;
+}
+
+.slick-slide img {
+  width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+
+.slick-slide {
+  transition: all ease-in-out 0.3s;
+  opacity: 1;
+}
+
+.slick-active {
+  opacity: 1;
+}
+
+.slick-current {
+  opacity: 1;
+}
+
+.slick-dots {
+  display: none !important;
+}
+
+.slick-prev {
+  background: url(../images/prev-icon.png) no-repeat;
+  background-color: transparent;
+  border: 0;
+  height: 28px;
+  width: 20px;
+  position: absolute;
+  z-index: 99;
+  left: 0;
+  top: 0;
+  margin-top: 90px;
+  margin-left: -8px;
+  cursor: pointer;
+}
+
+.slick-next {
+  background: url(../images/next-icon.png) no-repeat;
+  background-color: transparent;
+  border: 0;
+  height: 28px;
+  width: 20px;
+  position: absolute;
+  z-index: 99;
+  right: 0;
+  top: 0;
+  margin-top: 90px;
+  margin-right: -12px;
+  cursor: pointer;
+}
+
+.slick-next:hover {
+  background: url(../images/next-icon-hover.png) no-repeat;
+}
+
+.slick-prev:hover {
+  background: url(../images/prev-icon-hover.png) no-repeat;
+  background-color: transparent;
+}
+
+.normaltxt2 {
+  padding-left: 0;
+  float: left;
+  font-family: "pf_handbook_promedium";
+  font-weight: 500;
+}
+
+.txt3 {
+  font-family: "pf_handbook_promedium";
+}
+
+.inner-banner .container {
+  position: static;
+}
+
+.investerbox-new {
+  margin-top: 40px;
+}
+
+.carousel-control-next-icon {
+  background: url(../images/right-arrow.png) no-repeat;
+  width: 10px;
+  height: 17px;
+  background-size: cover;
+  opacity: 1;
+}
+
+.carousel-control-prev-icon {
+  background: url(../images/left-arrow.png) no-repeat;
+  width: 15px;
+  height: 24px;
+  background-size: cover;
+  opacity: 1;
+}
+
+.market-box .tab_box ul li:last-child {
+  border-bottom: none;
+}
+
+.hideon-desk1 {
+  display: none;
+}
+
+.hideon-mobile1 {
+  display: block;
+}
+
+.invest-solutions .norml-text {
+  color: #6c7174;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 0.36px;
+  line-height: 20px;
+  text-align: center;
+  font-family: "pf_handbook_prolight";
+}
+
+.invest-solutions ul li {
+  color: #6c7174;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 20px;
+  font-family: "pf_handbook_prolight";
+  padding: 7px 0;
+  padding-left: 0;
+}
+
+.invest-solutions ul {
+  list-style-position: outside;
+  margin-left: 18px;
+  padding-top: 5px;
+  min-height: auto;
+}
+
+.invest-solutions h4 {
+  color: #000000;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 24px;
+  padding-bottom: 10px;
+  font-family: "pf_handbook_promedium";
+}
+
+.equity::before {
+  content: "";
+  background: url(../images/stock-exchange.png) no-repeat;
+  width: 30px;
+  height: 30px;
+  float: left;
+  margin-right: 15px;
+  display: none;
+}
+
+.debt::before {
+  content: "";
+  background: url(../images/debt-icon.png) no-repeat;
+  width: 30px;
+  height: 30px;
+  float: left;
+  margin-right: 15px;
+  display: none;
+}
+
+.fxed-income::before {
+  content: "";
+  background: url(../images/debt-icon.png) no-repeat;
+  width: 30px;
+  height: 30px;
+  float: left;
+  margin-right: 15px;
+  display: none;
+}
+
+.invest-moretxt {
+  color: #3e593c;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 23px;
+  font-family: "pf_handbook_promedium";
+  cursor: pointer;
+}
+
+.invest-moretxt a {
+  color: #3e593c;
+  cursor: pointer;
+}
+
+.invest-moretxt a:hover {
+  color: #192319;
+}
+
+.fund-txt {
+  clear: both;
+  float: left;
+  padding-left: 15px;
+  width: 100%;
+}
+
+.green_btn {
+  background-color: #3e593c;
+  color: #ffffff;
+  font-size: 20px;
+  width: 120px;
+  height: 43px;
+  line-height: inherit;
+  margin-top: -6px;
+  margin-left: 27px;
+}
+
+.rght_align {
+  float: right;
+  margin-right: 23px;
+}
+
+.btn.focus,
+.btn:focus {
+  box-shadow: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+.invest_box {
+  min-height: 260px;
+}
+
+.fund_lft {
+  float: left;
+  width: 50%;
+}
+
+.top-rghtlinks .dropdown-toggle::after {
+  content: "^";
+  border: 0;
+  position: absolute;
+  transform: rotate(180deg);
+  right: 10px;
+  font-size: 22px;
+  color: #e9e9e9;
+  font-family: "pf_handbook_prolight";
+}
+
+.dropdown-menu {
+  margin-top: -10px;
+  border-radius: 0px;
+  padding: 10px 4px;
+  z-index: 9999;
+  min-width: 11rem;
+  padding-bottom: 0;
+  padding-top: 0;
+  box-shadow: 0 2px 10px 0 rgba(184, 184, 184, 0.5);
+  border: 0;
+}
+
+.top-rghtlinks .dropdown-menu li {
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+  line-height: 35px;
+  padding-left: 15px;
+  background: #738065;
+  color: #000;
+}
+
+.top-rghtlinks .dropdown-menu li:hover {
+  background: #f1f3f6;
+  color: #000;
+}
+
+.dropdown-menu li a {
+  color: #000;
+}
+
+.modal-header .close {
+  padding: 3px 23px;
+  margin: -1rem -1rem -1rem auto;
+  color: #bd2b2b;
+  opacity: 1;
+  font-size: 35px;
+  font-weight: normal;
+}
+
+.modal-header h4 {
+  color: #3e593c;
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 32px;
+  font-family: "pf_handbook_promedium";
+}
+
+.input-append input {
+  border: 1px solid #cdcece;
+  border-radius: 4px;
+  background-color: #ffffff;
+  height: 44px;
+  width: 177px;
+  padding-left: 15px;
+  background: url(../images/date-icon.png) no-repeat;
+  background-position: 140px center;
+}
+
+.modal-dialog {
+  max-width: 606px;
+}
+
+.modal-content {
+  border: 0;
+  border-radius: 2px;
+  outline: 0;
+}
+
+.input-append ::placeholder {
+  color: #6c7174;
+  font-size: 18px;
+}
+
+.date_text {
+  opacity: 0.7;
+  color: #000000;
+  font-size: 18px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.submit-btn {
+  height: 44px;
+  width: 120px;
+  background-color: #3e593c;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 20px;
+  text-align: center;
+  font-family: "pf_handbook_probold";
+  cursor: pointer;
+  border: 0;
+}
+
+.margin-top_30 {
+  margin-top: 30px;
+}
+
+.margin-left-45 {
+  margin-left: 45px;
+}
+
+.modal-header {
+  padding: 15px 32px;
+  padding-right: 10px;
+  border-bottom: none;
+}
+
+.modal-body {
+  padding-bottom: 20px;
+}
+
+.margin-left-15 {
+  margin-left: 15px;
+}
+
+.brdr-btm {
+  padding: 0 32px 0;
+  padding-right: 22px;
+  padding-left: 20px;
+  border-bottom: 1px solid #f1f3f6;
+  padding-bottom: 5px;
+}
+
+.select_date-search {
+  padding-top: 70px;
+  width: 98px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  cursor: pointer;
+}
+
+.select_txt {
+  color: #6c7174;
+  font-family: "PF Handbook Pro";
+  font-size: 18px;
+  line-height: 20px;
+  font-family: "pf_handbook_proregular";
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.top-rghtlinks ul li a {
+  color: #fff;
+  font-size: 15px;
+}
+
+.top-rghtlinks .dropdown a {
+  color: #fff;
+  padding: 0 10px;
+  font-size: 15px;
+}
+
+.top-rghtlinks .dropdown-menu li:last-child {
+  border-bottom: none;
+}
+
+body .top-rghtlinks .dropdown-toggle {
+  color: #fff;
+  display: inline-block;
+  padding-left: 10px !important;
+  padding-right: 30px !important;
+}
+
+.modal-content .list-group tr th {
+  float: left;
+  border: 0;
+  color: #6c7174;
+  font-size: 16px;
+  line-height: 16px;
+  font-family: "pf_handbook_prolight";
+  text-transform: uppercase;
+  -webkit-font-smoothing: initial;
+}
+
+.list-group-item {
+  position: relative;
+  display: block;
+  padding: 0.8rem 1.25rem;
+  margin-bottom: -1px;
+  border: none;
+  border-bottom: 1px solid #f1f3f6;
+  float: left;
+  color: #000000;
+  min-width: 135px;
+  font-size: 18px;
+  font-family: "pf_handbook_prolight";
+}
+
+.model_bdy-new {
+  padding-bottom: 30px;
+}
+
+.model_bdy-new .list-group {
+  height: 380px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.subhdr-bld {
+  color: #000000;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 38px;
+  text-align: center;
+  font-family: "pf_handbook_promedium";
+  width: 100%;
+}
+
+.mrgin-top-25 {
+  margin-top: 25px;
+}
+
+.subpage-inner p {
+  color: #6c7174;
+  font-family: "pf_handbook_prolight";
+  font-size: 18px;
+  letter-spacing: 0.36px;
+  line-height: 22px;
+  text-align: center;
+  width: 66%;
+  margin: 0 auto;
+}
+
+.ab-red-bg {
+  padding-right: 3px;
+}
+
+.ablight-white {
+  padding-left: 3px;
+}
+
+.subinner-hdr {
+  text-transform: uppercase;
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  line-height: 28px;
+  text-align: center;
+  font-family: "pf_handbook_probold";
+  width: 100%;
+  margin-top: 25px;
+  color: #000;
+  z-index: 9999;
+}
+
+.rght-align {
+  text-align: right;
+}
+
+.lft-align {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.text-white-clor {
+  color: #fff;
+  margin-top: 20px;
+}
+
+.inner-sec {
+  min-height: 350px;
+}
+
+.subpage-inner {
+  padding-bottom: 40px;
+}
+
+.about-Us::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  background-color: #f8f8f8;
+  height: 350px;
+  right: 0;
+}
+
+.about-Us::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  background-color: #bd2b2b;
+  height: 350px;
+  left: 0;
+}
+
+.about-detils {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.color-white {
+  color: #fff;
+  margin-left: 48px;
+}
+
+.about-lft p.subinner-subhdr {
+  height: 37px;
+  width: 435px;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+  text-align: center;
+  font-family: "pf_handbook_probold";
+  padding-bottom: 0;
+  margin-bottom: 5px;
+  background: url(../images/abc-small-logo.png) no-repeat;
+  background-position: 75px 10px;
+}
+
+.about-lft p {
+  height: 120px;
+  width: 369px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 20px;
+  text-align: center;
+  font-family: "pf_handbook_prolight";
+  padding-top: 10px;
+}
+
+.about-lft {
+  margin-top: 50px;
+}
+
+.list-group {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.list_groupAbout {
+  height: 300px;
+  overflow-y: scroll;
+}
+
+.about-rghtbox {
+  height: 215px;
+  width: 553px;
+  border: 4px solid #e9ab00;
+  z-index: 9999;
+  position: relative;
+  margin-left: -65px;
+  margin-top: 35px;
+  padding-top: 17px;
+}
+
+.values {
+  margin: 0 auto;
+  margin-top: 15px;
+}
+
+.values-box {
+  width: 785px;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+
+.value-solutions {
+  min-height: 145px;
+  width: auto;
+  font-size: 24px;
+  padding-left: 20px;
+  padding-right: 30px;
+  margin-top: 10px;
+  border: 1px solid #dedede;
+  border-radius: 3px;
+  padding-top: 20px;
+}
+
+.value-solutions h4 {
+  color: #000000;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 24px;
+  padding-bottom: 10px;
+}
+
+.value-solutions .value-hdr {
+  color: #3e593c;
+  font-family: "pf_handbook_proregular";
+  font-size: 22px;
+  line-height: 25px;
+  padding-bottom: 0;
+}
+
+.value-solutions .norml-text {
+  color: #6c7174;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.36px;
+  line-height: 20px;
+  text-align: center;
+  font-family: "pf_handbook_prolight";
+}
+
+.value-solutions .invest_box {
+  min-height: inherit;
+}
+
+.about-rght p.subinner-subhdr {
+  height: 43px;
+  width: 369px;
+  color: #000;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+  text-align: center;
+  font-family: "pf_handbook_probold";
+  padding-bottom: 0;
+  margin-bottom: 0;
+  background: url(../images/sunlife-icon.png) no-repeat;
+  background-position: 103px 10px;
+}
+
+.about-rght p {
+  height: auto;
+  width: 369px;
+  color: #000;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 20px;
+  text-align: center;
+  font-family: "pf_handbook_prolight";
+  padding-top: 10px;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+
+.about-rghtbox ul li {
+  float: none;
+  font-family: "pf_handbook_prolight";
+  font-size: 13px;
+  color: #6c7174;
+  list-style-type: none;
+  padding: 0 1px;
+  display: inline-block;
+  background: url(../images/about-brdr-line.png) no-repeat;
+  background-position: right center;
+  padding-right: 7px;
+  line-height: 12px;
+}
+
+.about-rghtbox ul li:last-child {
+  background: none;
+}
+
+.about-rghtbox ul {
+  width: 420px;
+  margin: 0 auto;
+  text-align: center;
+  margin-left: 70px;
+  line-height: 17px;
+}
+
+.btm-pd {
+  margin-top: -5px;
+}
+
+/*
+.about-rghtbox .pd-spce {
+    padding-left: 90px;
+}
+*/
+
+.about-rghtbox ul li:nth-child(8) {
+  border-right: none;
+}
+
+.mapbox .mob-icon a {
+  color: #fff;
+}
+
+.mapbox .email-icon a {
+  color: #fff;
+}
+
+.cntr {
+  width: 370px;
+  margin: 0 auto;
+}
+
+.about-rghtbox ul li:last-child {
+  border-right: none;
+}
+
+.invest_strategy ul li {
+  height: 125px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 9px 0 rgba(212, 212, 212, 0.5);
+  border-left: 5px solid #6a7c55;
+  padding-left: 127px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 20px;
+  padding-right: 70px;
+}
+
+.invest_strategy ul li:first-child {
+  background: url(../images/savings.png) no-repeat;
+  background-position: 40px center;
+}
+
+.invest_strategy ul li:nth-child(2) {
+  background: url(../images/portfolio.png) no-repeat;
+  background-position: 40px center;
+}
+
+.invest_strategy ul li:nth-child(3) {
+  background: url(../images/weight.png) no-repeat;
+  background-position: 40px center;
+}
+
+.invest_strategy ul li:nth-child(4) {
+  background: url(../images/exposure-limits-icon.png) no-repeat;
+  background-position: 40px center;
+}
+
+.invest_strategy ul li:nth-child(5) {
+  background: url(../images/weight-icon.png) no-repeat;
+  background-position: 40px center;
+}
+
+.invest_strategy h5 {
+  color: #000000;
+  font-family: "pf_handbook_proregular";
+  font-size: 22px;
+  line-height: 25px;
+}
+
+.invest_strategy p {
+  color: #6c7174;
+  font-family: "pf_handbook_proregular";
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 22px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.invest-hdr {
+  background-color: #f9f9f9;
+}
+
+.equity-fxdincome {
+  background-color: #f8f8f8;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.equity-hdr th {
+  background-color: transparent;
+  width: 50%;
+  text-align: center;
+  font-family: "pf_handbook_proregular";
+  font-weight: normal;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.equity-fxdincome .list-group {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.equity-fxdincome .equity-details .list-group-item:first-child {
+  width: 214px;
+  color: #3e593c;
+  font-family: "pf_handbook_promedium";
+  font-size: 24px;
+  padding-right: 90px;
+  line-height: 24px;
+  padding-left: 40px;
+}
+
+.equity-fxdincome .equity-details .list-group-item:nth-child(2) {
+  width: 527px;
+}
+
+.equity-fxdincome .equity-details .list-group-item:nth-child(3) {
+  width: 340px;
+}
+
+.equity-fxdincome .list-group tr {
+  border-bottom: 10px solid #f8f8f8;
+  background-color: #fff;
+}
+
+.equity-fxdincome .list-group tr td {
+  border-bottom: none;
+}
+
+.equity-fxdincome .list-group .equity-hdr {
+  background-color: #d9dccb;
+  border-bottom: 0;
+  width: 100%;
+  height: 40px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.equity-hdr .list-group-item {
+  background-color: transparent;
+  padding: 0;
+  width: 50%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.equity-details {
+  width: 100%;
+  background-color: #fff;
+  float: left;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px 0 rgba(195, 195, 195, 0.5);
+  border-top: 3px solid #969f6e;
+  padding: 20px 0;
+}
+
+.equity-details .list-group-item:focus,
+.list-group-item:hover {
+  z-index: 0;
+}
+
+.equity-details .list-group-item {
+  border-bottom: 0;
+}
+
+.equity-fxdincome .list-group-item p {
+  color: #6c7174;
+  font-size: 18px;
+  font-family: "pf_handbook_prolight";
+  width: 265px;
+  line-height: 20px;
+}
+
+.equity-details .list-group-item ul li {
+  border-bottom: 0;
+  list-style-type: none;
+  color: #6c7174;
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 7px;
+  padding-left: 10px;
+  background: url(../images/dot-icon.png) no-repeat;
+  background-position: 0 10px;
+  clear: both;
+}
+
+.equity-details .list-group-item ul {
+  padding-right: 0;
+}
+
+.list-subhdr {
+  font-size: 18px;
+  color: #000000;
+  font-family: "pf_handbook_proregular";
+  padding-bottom: 10px;
+  float: left;
+  width: 100%;
+}
+
+.top-rghtlinks .dropdown-menu a {
+  color: #1f1b1b;
+  /*    font-family: 'pf_handbook_promedium';*/
+  padding-left: 0 !important;
+}
+
+.top-rghtlinks .dropdown-menu li {
+  width: 100%;
+  border-bottom: none;
+  line-height: 40px;
+  padding-left: 10px;
+  background: #ffffff;
+  color: #000;
+}
+
+.invest-prcess-mangemt {
+  padding-top: 40px;
+}
+
+.value-solutions .norml-text ul li {
+  text-align: left;
+  list-style-position: inside;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.value-solutions.process_sec-new .norml-text ul li {
+  text-align: left;
+  list-style-position: outside;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.value-solutions.process_sec-new .norml-text ul {
+  padding-left: 17px;
+}
+
+.inveset-process {
+  min-height: 190px;
+}
+
+.process_sec-new .value-hdr {
+  font-family: "pf_handbook_proregular";
+  color: #000;
+}
+
+.color-black {
+  color: #000;
+}
+
+.value-solutions.process_sec-new {
+  box-shadow: 0 2px 10px 0 rgba(184, 184, 184, 0.5);
+  min-height: 210px;
+  border-top: 4px solid #3e593c;
+  width: 352px;
+}
+
+section.portfolio-process-sec.inner_csip {
+  background-color: #f9f9f9;
+  margin-top: 50px;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+
+.col-md-4.margin-left-align {
+  margin-left: 17%;
+}
+
+.portfilo-process-img {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+section.riskmanagement-sec.inner_csip {
+  background-color: #fff;
+  margin-top: 50px;
+}
+
+.riskbox {
+  border-radius: 5px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px 0 rgba(184, 184, 184, 0.5);
+  min-height: 321px;
+  width: 96%;
+  padding: 15px 20px;
+}
+
+.riskbox ul li {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 20px;
+  font-family: "pf_handbook_prolight";
+  color: #6c7174;
+  line-height: 20px;
+  margin-bottom: 13px;
+  list-style-position: outside;
+}
+
+.riskbox ul {
+  padding-left: 20px;
+  padding-top: 5px;
+}
+
+.riskbox h4 {
+  border-bottom: 1px solid #b5bb99;
+  padding-bottom: 10px;
+  font-size: 22px;
+}
+
+.riskmanagement-txt {
+  width: 100%;
+  color: #000000;
+  font-family: "pf_handbook_promedium";
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 34px;
+  display: flex;
+  justify-content: center;
+  min-height: 321px;
+  line-height: 309px;
+}
+
+.row.risk_space {
+  margin-bottom: 50px;
+}
+
+.corporate-div ul li {
+  width: 100px;
+  background-color: #4b6143;
+}
+
+.corporate-div ul li {
+  width: 100px;
+  background-color: #4b6143;
+  color: #fff;
+  width: 218px;
+  padding-top: 21px;
+  padding-left: 15px;
+  float: left;
+  margin-right: 20px;
+}
+
+.corporate-div ul li {
+  width: 100px;
+  background-color: #4b6143;
+  color: #fff;
+  width: 18.6%;
+  padding-top: 21px;
+  padding-left: 15px;
+  padding-right: 15px;
+  float: left;
+  margin-right: 20px;
+  height: 272px;
+}
+
+.corporate-div ul {
+  padding-left: 19px;
+}
+
+.corporate-div ul li:last-child {
+  margin-right: 0;
+}
+
+.corporate-div ul li ul li {
+  width: auto;
+  padding-left: 0;
+  height: auto;
+  padding-top: 5px;
+  font-size: 18px;
+  font-family: "pf_handbook_prolight";
+  padding-right: 0;
+  list-style-type: disc;
+  padding-bottom: 10px;
+  background: transparent;
+  margin-right: 0;
+}
+
+.riskmanagement-sec h3 {
+  padding-bottom: 30px;
+}
+
+section.corporate-sec.inner_csip {
+  background-color: #f9f9f9;
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+.cor-brdr-btm {
+  border: 0.5px solid #dedede;
+  opacity: 0.3;
+  margin-bottom: 10px;
+}
+
+.corporate-div h4 {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 23px;
+  font-family: "pf_handbook_promedium";
+}
+
+.corporate-sec h3 {
+  margin-bottom: 20px;
+}
+
+.snd-corporate {
+  background: rgba(75, 97, 67, 1);
+  background: -moz-linear-gradient(left, rgba(75, 97, 67, 1) 0%, rgba(75, 97, 67, 1) 56%, rgba(63, 92, 52, 1) 100%);
+  background: -webkit-gradient(
+    left top,
+    right top,
+    color-stop(0%, rgba(75, 97, 67, 1)),
+    color-stop(56%, rgba(75, 97, 67, 1)),
+    color-stop(100%, rgba(63, 92, 52, 1))
+  );
+  background: -webkit-linear-gradient(left, rgba(75, 97, 67, 1) 0%, rgba(75, 97, 67, 1) 56%, rgba(63, 92, 52, 1) 100%);
+  background: -o-linear-gradient(left, rgba(75, 97, 67, 1) 0%, rgba(75, 97, 67, 1) 56%, rgba(63, 92, 52, 1) 100%);
+  background: -ms-linear-gradient(left, rgba(75, 97, 67, 1) 0%, rgba(75, 97, 67, 1) 56%, rgba(63, 92, 52, 1) 100%);
+  background: linear-gradient(to right, rgba(75, 97, 67, 1) 0%, rgba(75, 97, 67, 1) 56%, rgba(63, 92, 52, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4b6143', endColorstr='#3f5c34', GradientType=1);
+}
+
+.third-corporate {
+  background: rgba(75, 97, 67, 1);
+  background: -moz-linear-gradient(left, rgba(75, 97, 67, 1) 0%, rgba(75, 97, 67, 1) 2%, rgba(126, 133, 92, 1) 100%);
+  background: -webkit-gradient(
+    left top,
+    right top,
+    color-stop(0%, rgba(75, 97, 67, 1)),
+    color-stop(2%, rgba(75, 97, 67, 1)),
+    color-stop(100%, rgba(126, 133, 92, 1))
+  );
+  background: -webkit-linear-gradient(left, rgba(75, 97, 67, 1) 0%, rgba(75, 97, 67, 1) 2%, rgba(126, 133, 92, 1) 100%);
+  background: -o-linear-gradient(left, rgba(75, 97, 67, 1) 0%, rgba(75, 97, 67, 1) 2%, rgba(126, 133, 92, 1) 100%);
+  background: -ms-linear-gradient(left, rgba(75, 97, 67, 1) 0%, rgba(75, 97, 67, 1) 2%, rgba(126, 133, 92, 1) 100%);
+  background: linear-gradient(to right, rgba(75, 97, 67, 1) 0%, rgba(75, 97, 67, 1) 2%, rgba(126, 133, 92, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4b6143', endColorstr='#7e855c', GradientType=1);
+}
+
+.fourth-corporate {
+  background: rgba(112, 120, 72, 1);
+  background: -moz-linear-gradient(left, rgba(112, 120, 72, 1) 0%, rgba(112, 120, 72, 1) 2%, rgba(126, 133, 92, 1) 100%);
+  background: -webkit-gradient(
+    left top,
+    right top,
+    color-stop(0%, rgba(112, 120, 72, 1)),
+    color-stop(2%, rgba(112, 120, 72, 1)),
+    color-stop(100%, rgba(126, 133, 92, 1))
+  );
+  background: -webkit-linear-gradient(left, rgba(112, 120, 72, 1) 0%, rgba(112, 120, 72, 1) 2%, rgba(126, 133, 92, 1) 100%);
+  background: -o-linear-gradient(left, rgba(112, 120, 72, 1) 0%, rgba(112, 120, 72, 1) 2%, rgba(126, 133, 92, 1) 100%);
+  background: -ms-linear-gradient(left, rgba(112, 120, 72, 1) 0%, rgba(112, 120, 72, 1) 2%, rgba(126, 133, 92, 1) 100%);
+  background: linear-gradient(to right, rgba(112, 120, 72, 1) 0%, rgba(112, 120, 72, 1) 2%, rgba(126, 133, 92, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#707848', endColorstr='#7e855c', GradientType=1);
+}
+
+.fifth-corporate {
+  background: rgba(112, 120, 72, 1);
+  background: -moz-linear-gradient(left, rgba(112, 120, 72, 1) 0%, rgba(112, 120, 72, 1) 2%, rgba(126, 133, 92, 1) 100%);
+  background: -webkit-gradient(
+    left top,
+    right top,
+    color-stop(0%, rgba(112, 120, 72, 1)),
+    color-stop(2%, rgba(112, 120, 72, 1)),
+    color-stop(100%, rgba(126, 133, 92, 1))
+  );
+  background: -webkit-linear-gradient(left, rgba(112, 120, 72, 1) 0%, rgba(112, 120, 72, 1) 2%, rgba(126, 133, 92, 1) 100%);
+  background: -o-linear-gradient(left, rgba(112, 120, 72, 1) 0%, rgba(112, 120, 72, 1) 2%, rgba(126, 133, 92, 1) 100%);
+  background: -ms-linear-gradient(left, rgba(112, 120, 72, 1) 0%, rgba(112, 120, 72, 1) 2%, rgba(126, 133, 92, 1) 100%);
+  background: linear-gradient(to right, rgba(112, 120, 72, 1) 0%, rgba(112, 120, 72, 1) 2%, rgba(126, 133, 92, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#707848', endColorstr='#7e855c', GradientType=1);
+}
+
+.equity-details .list-group-item ul {
+  padding-right: 0;
+}
+
+.equity-fxdincome .list-group .fund-box {
+  padding-right: 170px;
+}
+
+.invetstnew {
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 22px;
+  letter-spacing: 0.92px;
+  font-family: "pf_handbook_proregular";
+  margin-bottom: 15px;
+}
+
+.investment {
+  margin: 0 auto;
+  margin-top: 15px;
+  margin-bottom: 35px;
+}
+
+.equity-hdr .list-group-item {
+  background-color: transparent;
+  padding: 0;
+  width: 50%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "pf_handbook_proregular";
+  letter-spacing: 1.5px;
+}
+
+.portfilo-process-img {
+  /*    margin: 0 auto;*/
+  height: 100%;
+}
+
+/* 
+.portolio-Sec {
+    position: relative;
+    width: 650px;
+    margin: 0 auto;
+    height: 735px;
+} */
+
+.heading-img {
+  transform: rotate(0deg);
+  margin-left: -56px;
+  margin-top: 18px;
+  width: 250px;
+  height: 270px;
+  float: left;
+  position: relative;
+  z-index: 99999;
+  background: url(../images/heading-img.png) no-repeat;
+}
+
+.heading-img:hover {
+  transform: rotate(0deg);
+  margin-left: -56px;
+  margin-top: 18px;
+  width: 250px;
+  height: 270px;
+  float: left;
+  position: relative;
+  z-index: 99999;
+  background: url(../images/heading-hover.png) no-repeat;
+}
+
+.stock-img {
+  transform: rotate(2deg);
+  margin-left: -5px;
+  margin-top: 10px;
+  width: 250px;
+  height: 270px;
+  float: left;
+  background: url(../images/stock-img.png) no-repeat;
+}
+
+.stock-img:hover {
+  transform: rotate(0deg);
+  margin-left: -2px;
+  margin-top: 20px;
+  width: 250px;
+  height: 270px;
+  float: left;
+  background: url(../images/stock-img-hover.png) no-repeat;
+}
+
+.stock-slt-img {
+  transform: rotate(137deg);
+  margin-left: 326px;
+  margin-top: -72px;
+  width: 256px;
+  height: 277px;
+  float: left;
+  background: url(../images/sector-img.png) no-repeat;
+}
+
+.portfolio-sec-img {
+  transform: rotate(186deg);
+  margin-left: 183px;
+  margin-top: -128px;
+  width: 256px;
+  height: 277px;
+  float: left;
+}
+
+.assume-sec-img {
+  transform: rotate(232deg);
+  margin-left: -30px;
+  margin-top: -284px;
+  width: 256px;
+  height: 277px;
+  float: left;
+}
+
+.portfolio-optimization-img {
+  transform: rotate(279deg);
+  margin-left: -171px;
+  margin-top: -439px;
+  width: 256px;
+  height: 277px;
+  float: left;
+}
+
+.inveset-process .norml-text ul {
+  padding-left: 18px;
+}
+
+.inveset-process .norml-text ul li {
+  list-style-position: outside;
+}
+
+.snd_datetxt {
+  margin-left: 15px;
+}
+
+::placeholder {
+  color: red;
+  opacity: 1;
+  /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: red;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: red;
+}
+
+.modal-content .list-group tr th {
+  border-bottom: 1px solid #f1f3f6;
+}
+
+.list-group-item {
+  padding: 15px 1.25rem;
+}
+
+.forms-downloads .market-box .nav-tabs {
+  border-bottom: 0;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 0;
+  border: 0;
+  background: #3e5a3c;
+  padding-bottom: 1px;
+  border-top-right-radius: 3px;
+  border: 0;
+}
+
+.forms-downloads .market-box {
+  border: none;
+  box-shadow: 0 1px 7px 0 rgba(143, 143, 143, 0.5);
+  height: auto;
+  padding-bottom: 5px;
+}
+
+.forms-downloads .market-box .nav-item .nav-link {
+  color: #ffffff;
+  background: #3e5a3c;
+  text-align: center;
+  font-family: "pf_handbook_proregular";
+  border: 0;
+  /*    padding: 11px 49px;*/
+  width: auto;
+  height: 54px;
+  cursor: pointer;
+  line-height: 52px;
+}
+
+.forms-downloads .market-box .nav-item .active {
+  background-color: #fff;
+  border: 0;
+  color: #353535;
+  font-family: "pf_handbook_promedium";
+  opacity: 1;
+}
+
+.forms-downloads .nav-tabs .nav-item:last-child a {
+  width: 197.5px;
+  border-top-right-radius: 3px;
+}
+
+.forms-downloads {
+  margin-top: 0;
+}
+
+.forms-downloads .nav-tabs .nav-item:first-child a {
+  width: 195px;
+  padding: 0;
+}
+
+.forms-downloads .nav-tabs .nav-item:nth-child(2) a {
+  width: 270px;
+  padding: 0;
+}
+
+.forms-downloads .nav-tabs .nav-item:nth-child(3) a {
+  width: 115px;
+  padding: 0;
+}
+
+.forms-downloads .nav-tabs .nav-item:nth-child(4) a {
+  width: 160px;
+  padding: 0;
+}
+
+.forms-downloads .nav-tabs .nav-item:nth-child(5) a {
+  width: 260px;
+  padding: 0;
+}
+
+.algn-cntr {
+  text-align: center;
+}
+
+.forms-downloads .tab-content .sub .col-md-3 {
+  text-align: center;
+}
+
+.forms-downloads .tab-content .sub .col-md-6 {
+  color: #353535;
+  padding-left: 40px;
+}
+
+.forms-downloads .tab-content ul li {
+  list-style-type: none;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #f3f1f1;
+  padding-top: 30px;
+  color: #6c7174;
+  font-size: 18px;
+}
+
+.forms-downloads .top-bar .col-md-6 {
+  border-bottom: none;
+  padding-left: 40px;
+}
+
+.tab-subhdr {
+  color: #6c7174;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  font-family: "pf_handbook_promedium";
+}
+
+.view-text {
+  color: #6a7c55;
+  font-family: "pf_handbook_promedium";
+  font-size: 18px;
+  line-height: 18px;
+  text-decoration: underline;
+}
+
+.view-text:hover {
+  color: #6a7c55;
+}
+
+.safty-txt {
+  height: 38px;
+  width: 130px;
+  color: #dedede;
+  font-size: 54px;
+  font-weight: 500;
+  line-height: 38px;
+  font-family: "pf_handbook_promedium";
+  margin-top: 25px;
+  margin-bottom: 55px;
+  clear: both;
+  cursor: pointer;
+}
+
+.liquidity-txt {
+  height: 38px;
+  width: 130px;
+  color: #dedede;
+  font-size: 54px;
+  font-weight: 500;
+  line-height: 38px;
+  font-family: "pf_handbook_promedium";
+  margin-top: 0;
+  margin-bottom: 55px;
+  clear: both;
+  cursor: pointer;
+}
+
+.returns-txt {
+  height: 38px;
+  width: 130px;
+  color: #dedede;
+  font-size: 54px;
+  font-weight: 500;
+  line-height: 38px;
+  font-family: "pf_handbook_promedium";
+  margin-top: 0;
+  margin-bottom: 25px;
+  clear: both;
+  cursor: pointer;
+}
+
+section.risk-access_sec {
+  padding: 40px 0;
+  padding-bottom: 45px;
+}
+
+.active-txt {
+  color: #3e593c !important;
+}
+
+.risk_subhdrtxt {
+  height: auto;
+  color: #000000;
+  font-size: 28px;
+  line-height: 28px;
+  font-family: "pf_handbook_proregular";
+  margin-bottom: 15px;
+}
+
+.risk-access_sec ul li {
+  color: #6c7174;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 30px;
+  font-family: "pf_handbook_prolight";
+  margin-bottom: 10px;
+  list-style-position: outside;
+  list-style-type: disc;
+}
+
+.risk-access_sec ul {
+  list-style-position: outside;
+  padding-left: 22px;
+}
+
+.rish-rghtbox {
+  padding-top: 50px;
+}
+
+.access_lftxt {
+  padding-left: 107px;
+}
+
+.subpage-inner2 {
+  padding-bottom: 25px;
+}
+
+section.invest_sec {
+  background-color: #fbfbfb;
+  padding-top: 50px;
+}
+
+.innersubheadertxt {
+  height: 34px;
+  width: 502px;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 2.75px;
+  line-height: 34px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+
+.invest-processor {
+  background: url(../images/invest-process-img.svg) no-repeat;
+  height: 849px;
+  width: 100%;
+  background-position: center 0;
+  margin-top: 55px;
+  margin-bottom: 50px;
+}
+
+.reserch-box {
+  height: 515px;
+  width: 288px;
+  border: 1px solid #cdcece;
+  border-radius: 4px;
+  margin-top: 45px;
+  margin-right: 8px;
+  padding-top: 22px;
+  padding-left: 22px;
+  float: right;
+}
+
+.reserch-box_snd {
+  height: 137px;
+  width: 288px;
+  border: 1px solid #cdcece;
+  background-color: #fbfbfb;
+  border-radius: 4px;
+  margin-right: 8px;
+  margin-top: 40px;
+  padding-top: 19px;
+  padding-left: 22px;
+  float: right;
+}
+
+.rsrch-subhdr {
+  height: 28px;
+  width: auto;
+  color: #000000;
+  font-family: "pf_handbook_promedium";
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+  margin-bottom: 25px;
+}
+
+.rsrch-subhdr-new {
+  height: 20px;
+  color: #000000;
+  font-family: "pf_handbook_proregular";
+  font-size: 18px;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.reserch-box p {
+  height: auto;
+  width: 210px;
+  color: #6c7174;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 22px;
+  font-family: "pf_handbook_prolight";
+}
+
+.green-subhdrtxt {
+  color: #3e593c;
+  font-family: "pf_handbook_proregular";
+  font-size: 22px;
+}
+
+.rsrch-subhdr-new.mrgin-top-20 {
+  margin-top: 15px;
+  float: left;
+  width: 100%;
+}
+
+.security-level-por {
+  color: #6c7174;
+  font-family: "pf_handbook_prolight";
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 22px;
+  width: 225px;
+}
+
+.rsrch-subhdr.subhdrnew {
+  margin-bottom: 12px;
+}
+
+.full-width {
+  width: 100%;
+  float: left;
+  margin-bottom: 3px;
+  margin-top: 15px;
+}
+
+.reserch-box.rsrch-snd {
+  margin-left: 8px;
+  float: left;
+}
+
+.reserch-box_snd.rsrch-snd {
+  margin-left: 8px;
+  float: left;
+  background-color: #fbfbfb;
+  height: 150px;
+}
+
+.investment-objective {
+  color: #ffffff;
+  font-family: "pf_handbook_proregular";
+  font-size: 22px;
+  line-height: 24px;
+  text-align: center;
+  margin-bottom: 7px;
+}
+
+.invst-box {
+  text-align: center;
+  margin-top: 110px;
+}
+
+.invst-box p {
+  color: #f1f3f6;
+  font-family: "pf_handbook_prolight";
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 20px;
+  text-align: center;
+}
+
+.invst-box.snd_box2 {
+  margin-top: 75px;
+}
+
+.invst-box.snd_box3 {
+  margin-top: 95px;
+}
+
+.invst-box.snd_box4 {
+  margin-top: 85px;
+}
+
+.liquidity-txt:hover {
+  color: #bfbdbd;
+}
+
+.safty-txt:hover {
+  color: #bfbdbd;
+}
+
+.invst-box.snd_box2.sndbox5 {
+  margin-top: 90px;
+}
+
+.returns-txt:hover {
+  color: #bfbdbd;
+}
+
+.innerdiv .invst-box.snd_box2 {
+  margin-top: 75px;
+}
+
+.innerdiv .invst-box.snd_box4 {
+  margin-top: 90px;
+}
+
+.innerdiv .investment-objective {
+  margin-bottom: 7px;
+}
+
+.innerdiv .frst {
+  text-align: center;
+  margin-top: 110px;
+}
+
+.invest-boxSnd .invst-box.Sndbox3 {
+  margin-top: 80px;
+}
+
+.invest-boxthird .invst-box.Sndbox4 {
+  margin-top: 80px;
+}
+
+.jq-selectx .open li h4 {
+  padding-left: 10px;
+  margin-bottom: 0;
+  height: 35px;
+  line-height: 35px;
+}
+
+.diversity-at-aditya {
+  color: #000000;
+  font-family: "pf_handbook_proregular";
+  font-size: 24px;
+  letter-spacing: 2px;
+  line-height: 24px;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  padding-top: 86px;
+}
+
+.awards-inner p {
+  color: #6c7174;
+  font-family: "pf_handbook_prolight";
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 0.36px;
+  line-height: 23px;
+  width: 645px;
+}
+
+.diversity-amc_img {
+  margin-top: 41px;
+}
+
+#slideshow-main {
+  width: 970px;
+  float: left;
+  margin-right: 3px;
+  background: url(../images/awards-bg.png) no-repeat;
+  padding-left: 45px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-position: 0 0;
+  background-size: 9px;
+}
+
+#slideshow-main ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+#slideshow-main li {
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: relative;
+}
+
+#slideshow-main li.active {
+  display: block !important;
+}
+
+#slideshow-main li span.opacity {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 60px;
+  filter: alpha(opacity=50);
+  -moz-opacity: 0.5;
+  -khtml-opacity: 0.5;
+  opacity: 0.5;
+  z-index: 500;
+}
+
+#slideshow-main li span.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: auto;
+  z-index: 1000;
+}
+
+#slideshow-main li span.content h1 {
+  font-size: 14px;
+  margin: 5px 0;
+  padding: 0 10px;
+  color: #42e2e8;
+}
+
+#slideshow-main li span.content p {
+  font-size: 11px;
+  margin: 5px 0;
+  padding: 0 10px;
+  color: #42e2e8;
+}
+
+#slideshow-carousel {
+  float: left;
+  width: 206px;
+  position: relative;
+  top: 27px;
+}
+
+#slideshow-carousel ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+}
+
+#slideshow-carousel li {
+  height: 77px;
+  position: relative;
+}
+
+#slideshow-carousel li .arrow {
+  left: 3px;
+  top: 28px;
+  position: absolute;
+  width: 20px;
+  height: 40px;
+  background: url(images/arrow_white.png) no-repeat 0 0;
+  display: block;
+}
+
+#slideshow-carousel li a {
+  display: block;
+  width: 206px;
+  height: auto;
+  text-align: center;
+  color: #cdcece;
+  line-height: inherit;
+  font-size: 24px;
+  font-family: "pf_handbook_promedium";
+  cursor: pointer;
+}
+
+#slideshow-carousel .active {
+  filter: alpha(opacity=100);
+  -moz-opacity: 1;
+  -khtml-opacity: 1;
+  opacity: 1;
+}
+
+#slideshow-carousel .faded {
+  filter: alpha(opacity=50);
+  -moz-opacity: 0.5;
+  -khtml-opacity: 0.5;
+  opacity: 0.5;
+}
+
+.award_box {
+  width: 577px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 9px 0 rgba(119, 119, 119, 0.5);
+  min-height: 86px;
+  border-left: 6px solid #969f6e;
+  padding: 25px 25px;
+  font-size: 20px;
+  color: #000;
+  font-family: "pf_handbook_prolight";
+  line-height: 24px;
+  text-align: left;
+  margin-bottom: 22px;
+  /*    display: flex;*/
+  align-items: center;
+}
+
+.awrds-bld {
+  font-family: "pf_handbook_promedium";
+  font-weight: normal;
+}
+
+.award-lftbox h4 {
+  color: #000000;
+  font-family: "pf_handbook_proregular";
+  font-size: 26px;
+  line-height: 38px;
+}
+
+.award-lftbox p {
+  color: #000000;
+  font-family: "pf_handbook_promedium";
+  font-size: 54px;
+  font-weight: 500;
+  line-height: 38px;
+}
+
+.award-lftbox {
+  float: left;
+  width: 210px;
+}
+
+.award-rghtbox {
+  float: left;
+}
+
+.awards-lightbg {
+  background-color: #fbfbfb;
+  padding-top: 30px;
+  padding-bottom: 15px;
+}
+
+.diverse-box {
+  height: 387px;
+  width: 95%;
+  border-radius: 2px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 9px 0 rgba(212, 212, 212, 0.5);
+  border-top: 4px solid #6a7c55;
+  border-radius: 2px 2px 0 0;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.diverse-box h5 {
+  color: #3e593c;
+  font-family: "pf_handbook_promedium";
+  font-size: 18px;
+  line-height: 26px;
+  border: 1px solid #f1f3f6;
+  height: 47px;
+  line-height: 47px;
+  padding-left: 25px;
+  text-transform: uppercase;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.diverse_details {
+  width: 100%;
+}
+
+.deverse_hdr {
+  float: left;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.divercity_divfrst {
+  width: 25%;
+  float: left;
+  text-align: left;
+  padding-left: 25px;
+  font-size: 18px;
+  color: #000;
+}
+
+.divercity_div {
+  width: 25%;
+  float: left;
+  text-align: left;
+  font-size: 18px;
+  color: #000;
+  align-items: center;
+}
+
+.deverse_area {
+  float: left;
+  clear: both;
+  width: 100%;
+  border-top: 1px solid #f1f3f6;
+}
+
+.deverse_area div {
+  width: 25%;
+  float: left;
+  text-align: left;
+  padding-left: 75px;
+  height: 55px;
+  line-height: 55px;
+  /*  border-top: 1px solid #F1F3F6;*/
+}
+
+.deverse_area div:first-child {
+  padding-left: 25px;
+}
+
+.deverse_area-hdr {
+  font-size: 18px;
+  color: #000;
+}
+
+.awards-inner {
+  padding-bottom: 35px;
+}
+
+.diversity_box {
+  padding-bottom: 30px;
+}
+
+.awardsshowcase_sec {
+  height: 356px;
+  width: 100%;
+  background-color: #f6f6f6;
+}
+
+.awrds-hdr {
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 2px;
+  line-height: 24px;
+  font-family: "pf_handbook_proregular";
+  text-transform: uppercase;
+  padding-top: 27px;
+  width: 100%;
+  padding-left: 60px;
+  padding-bottom: 20px;
+}
+
+.showcase_box {
+  float: left;
+  clear: both;
+  width: 100%;
+}
+
+.showcase_box ul li {
+  list-style-type: none;
+  float: left;
+  padding: 0 60px;
+}
+
+.deverse_area-new div {
+  width: 33%;
+}
+
+.deverse_area .divercity_div1 {
+  width: 45%;
+  height: 70px;
+  line-height: 65px;
+}
+
+.deverse_area .divercity_div2 {
+  width: 20%;
+  padding-left: 124px;
+}
+
+.deverse_area .divercity_div3 {
+  width: 33%;
+  padding-left: 117px;
+  text-align: center;
+}
+
+.deverse_hdr .divercity_div1 {
+  width: 45%;
+  height: 40px;
+  line-height: 40px;
+}
+
+.deverse_hdr .divercity_div2 {
+  width: 20%;
+  height: 40px;
+  line-height: 40px;
+}
+
+.deverse_hdr .divercity_div3 {
+  width: 33%;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+}
+
+.contact-box input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 25px;
+  resize: vertical;
+  background: transparent;
+}
+
+.contact-box input[type="number"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 25px;
+  resize: vertical;
+  background: transparent;
+}
+
+.contact-box input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-box input[type="submit"]:hover {
+  background-color: #356d30;
+}
+
+.contact-box {
+  width: 560px;
+}
+
+.get-in-touch-with-us {
+  color: #0a0a0a;
+  font-family: "pf_handbook_promedium";
+  font-size: 32px;
+  line-height: 38px;
+  margin-bottom: 30px;
+  margin-top: 0;
+  padding-top: 30px;
+}
+
+.contact-box label {
+  opacity: 0.7;
+  color: #000000;
+  font-family: "pf_handbook_proregular";
+  font-size: 18px;
+  line-height: 20px;
+  margin-bottom: 3px;
+}
+
+body .contact-box .submitbtn {
+  height: 44px;
+  width: 120px;
+  border-radius: 2px;
+  background-color: #3e593c;
+}
+
+.contact-box ::placeholder {
+  color: #c8c8c8;
+  opacity: 1;
+  /* Firefox */
+}
+
+.contact-box :-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #c8c8c8;
+}
+
+.contact-box ::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #c8c8c8;
+}
+
+/* ========================================Contact Page=============================================== */
+
+.contact-page {
+  width: 100%;
+  height: auto;
+}
+
+.check-wrapper {
+  position: relative;
+  float: left;
+  width: 30px;
+  height: 100%;
+  margin-top: 5px;
+  margin-left: -1%;
+  margin-right: 10px;
+}
+
+.check-reltext {
+  float: left;
+  width: calc(100% - 40px);
+  padding-left: 20px;
+}
+
+.check-reltext span {
+  opacity: 0.7;
+  color: #000000;
+  font-size: 16px;
+  line-height: 19px;
+  display: block;
+}
+
+.check-wrapper .check-box {
+  position: absolute;
+  visibility: hidden;
+}
+
+.check-wrapper .check-box label {
+  position: relative;
+}
+
+.check-wrapper .check-box + label:after {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border: 2px solid #cdcece;
+  border-radius: 4px;
+  content: "";
+  background: #fff;
+}
+
+.check-wrapper input[type="checkbox"]:checked ~ label:after {
+  background: url("../images/check-symbol.svg");
+  background-size: 75%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #fff;
+}
+
+.for-checkbs {
+  float: left;
+  width: 100%;
+  padding-top: 30px;
+}
+
+.for-checkbs .check-wrapper {
+  margin-top: 5px;
+}
+
+.for-checkbs .check-reltext span {
+  opacity: 0.7;
+  color: #000000;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.lite-text {
+  opacity: 0.7;
+  font-size: 14px;
+  font-family: "pf_handbook_prolight";
+  color: #000000;
+  float: left;
+  width: 93%;
+  margin-bottom: 30px;
+}
+
+body .contact-box .submitbtn {
+  height: 44px;
+  width: 120px;
+  border-radius: 2px;
+  font-size: 20px;
+  font-family: "pf_handbook_promedium";
+  background-color: #3e593c;
+  float: right;
+}
+
+.mapbox {
+  height: 253px;
+  width: 427px;
+  border-radius: 2px;
+  background-color: #3e593c;
+  box-shadow: 0 2px 18px 0 rgba(173, 173, 173, 0.5);
+  position: absolute;
+  bottom: 30px;
+  right: 95px;
+  padding: 20px;
+  color: #fff;
+  padding-left: 33px;
+  font-size: 22px;
+  line-height: 25px;
+}
+
+.mob-icon {
+  width: 307px;
+  color: #f1f3f6;
+  font-family: "pf_handbook_prolight";
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background: url(../images/mob-icon.png) no-repeat 0 0;
+  padding-left: 40px;
+  margin-bottom: 25px;
+}
+
+.locate-icon {
+  width: auto;
+  color: #f1f3f6;
+  font-family: "pf_handbook_prolight";
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 20px;
+  margin-top: 25px;
+  background: url(../images/locate-icon.png) no-repeat 0 0;
+  padding-left: 40px;
+  margin-bottom: 20px;
+}
+
+.email-icon {
+  width: 307px;
+  color: #f1f3f6;
+  font-family: "pf_handbook_prolight";
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 20px;
+  background: url(../images/mail-icon.png) no-repeat 0 0;
+  padding-left: 40px;
+  margin-bottom: 20px;
+}
+
+/*
+.new3 div {
+    height: 55px;
+}
+*/
+
+.new3 .deverse_area div {
+  line-height: 55px;
+  width: 25%;
+}
+
+.new3 .deverse_hdr div {
+  width: 25%;
+}
+
+.new2 .deverse_area div {
+  line-height: 70px;
+  height: 78px;
+}
+
+.contact-box1 {
+  float: right;
+  width: 630px;
+}
+
+.contact-box select {
+  height: 50px;
+  background: url(../images/contact-dwn-arrow.png) no-repeat 0 0;
+  background-position: 97.5% center;
+}
+
+.mrgin-lft-rght {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+#slideshow-carousel li a.active-green {
+  color: #3e593c;
+}
+
+.desktop-none {
+  display: none;
+}
+
+.desktopnone {
+  display: none;
+}
+
+.about-rghtbox ul li:last-child {
+  border-right: none;
+}
+
+.about-rghtbox ul li:nth-child(7) {
+  border-right: none;
+}
+
+.deverse_area div:first-child {
+  padding-left: 25px;
+  border-right: 1px solid #f1f3f6;
+}
+
+.new2 .deverse_area div:first-child {
+  width: 169px;
+  text-align: left;
+}
+
+.new2 .deverse_area div {
+  line-height: 90px;
+  height: 91px;
+  width: 30%;
+  text-align: left;
+}
+
+.new2 .deverse_hdr .divercity_div1 {
+  width: 35%;
+  height: 40px;
+  line-height: 40px;
+  text-align: left;
+}
+
+.new2 .deverse_hdr .divercity_div {
+  width: 30%;
+  text-align: center;
+}
+
+.deverse_area .deverse_area-hdr {
+  width: 20%;
+}
+
+.new3 .deverse_hdr .divercity_divfrst {
+  width: 30%;
+}
+
+.new3 .deverse_area div {
+  line-height: 68px;
+  height: 68px;
+}
+
+.home_fundnav .inner-normaltext {
+  text-align: left;
+}
+
+.contact-box select {
+  /* for Firefox */
+  -moz-appearance: none;
+  /* for Chrome */
+  -webkit-appearance: none;
+}
+
+/* For IE10 */
+
+.contact-box select::-ms-expand {
+  display: none;
+}
+
+select {
+  color: #c8c8c8 !important;
+}
+
+option[default] {
+  display: none;
+}
+
+.forms-downlds {
+  background-color: #f8f8f8;
+  padding-bottom: 0;
+  height: 88px;
+}
+
+.forms-downloads {
+  margin-top: 20px;
+}
+
+.fund-lft {
+  padding-left: 25px;
+}
+
+.desk .pd-lft-0 {
+  padding-left: 0;
+}
+
+.rish-rghtbox {
+  margin-right: 110px;
+}
+
+.contact-box textarea {
+  margin-bottom: 15px;
+}
+
+.contact {
+  padding-top: 0 !important;
+  background-color: #ffffff;
+}
+
+.equity_pd-0 {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.modal-open .modal {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+span.algn-space {
+  padding: 0 12px;
+}
+
+#declartion p {
+  color: #6c7174;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 20px;
+  font-family: "pf_handbook_prolight";
+  margin-bottom: 16px;
+}
+
+button.btn.btn-green {
+  background-color: #3e593c;
+  border-radius: 2px;
+  color: #ffffff;
+  font-size: 20px;
+  font-family: "pf_handbook_probold";
+  width: 120px;
+  height: 44px;
+  margin: 0 auto;
+  float: none;
+  display: block;
+  margin-top: 10px;
+}
+
+#declartion .modal-header {
+  padding: 15px 32px;
+  padding-right: 10px;
+  border-bottom: none;
+  padding-bottom: 14px;
+}
+
+#declartion .modal-body {
+  padding-bottom: 0;
+  padding-top: 0;
+  padding-left: 32px;
+  padding-right: 32px;
+  height: 398px;
+  overflow-y: scroll;
+  width: 99.5%;
+}
+
+#declartion .modal-content {
+  border: 0;
+  border-radius: 2px;
+  outline: 0;
+  padding-bottom: 26px;
+}
+
+.indice-market .tab-content {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.indice-market .tab-content .col-md-4 {
+  padding-left: 0;
+}
+
+.indice-market .tab-content .col-md-8 {
+  padding-left: 0;
+}
+
+.sidecard2 .position {
+  position: sticky;
+  top: 0;
+  background: #f2f3f7;
+  padding-top: 5px;
+}
+
+.sidecard3 span {
+  padding: 1rem;
+  display: block;
+  text-align: center;
+  font-size: 1.1rem;
+}
