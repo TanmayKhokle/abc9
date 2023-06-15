@@ -54,7 +54,7 @@ config.set(null, "microdata", {"waitTimeMs":500});
 config.set("608685247089961", "prohibitedSources", {"prohibitedSources":[]});
 fbq.loadPlugin("prohibitedsources");
 instance.optIn("608685247089961", "ProhibitedSources", true);
-config.set("608685247089961", "unwantedData", {"blacklisted_keys":{"Lead":{"cd":[],"url":["lat"]},"Scheme_Details_Proceed":{"cd":[],"url":["interestRate"]},"PageView":{"cd":[],"url":["interestRate","otp","lat","loanTenure","pan","EmailId","accountnumber"]}},"sensitive_keys":{}});
+config.set("608685247089961", "unwantedData", {"blacklisted_keys":{"Lead":{"cd":[],"url":["lat"]},"Scheme_Details_Proceed":{"cd":[],"url":["interestRate","loanTenure"]},"PageView":{"cd":[],"url":["interestRate","otp","lat","loanTenure","pan","EmailId","accountnumber"]}},"sensitive_keys":{}});
 fbq.loadPlugin("unwanteddata");
 instance.optIn("608685247089961", "UnwantedData", true);
 fbq.loadPlugin("iabpcmaebridge");
